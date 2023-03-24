@@ -8,9 +8,9 @@
 // ["Russia", "Denmark", "Kazan"] -> []
 
 string[] array = { "hello", "2", "world", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan"};
-int count = ArrayCheck(array);
+int count = TestArray(array);
 string[] resultArray = FillArray(array, count);
-int ArrayCheck(string[] array)
+int TestArray(string[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
