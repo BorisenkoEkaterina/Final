@@ -7,10 +7,9 @@
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 // ["Russia", "Denmark", "Kazan"] -> []
 
-string[] array = { "hello", "2", "world", ":-)", "1234", "1567", "Rus",
-"-2", "computer science", "Russia", "Denmark", "Kazan", "GB", "GBU" };
+string[] array = { "hello", "2", "world", ":-)", "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan"};
 int count = ArrayCheck(array);
-string[] resultArray = FillResultArray(array, count);
+string[] resultArray = FillArray(array, count);
 int ArrayCheck(string[] array)
 {
     int count = 0;
@@ -20,7 +19,7 @@ int ArrayCheck(string[] array)
     }
     return count;
 }
-string[] FillResultArray(string[] array, int count)
+string[] FillArray(string[] array, int count)
 {
     string[] result = new string[count];
     for (int i = 0; i < array.Length; i++)
